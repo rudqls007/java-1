@@ -5,7 +5,8 @@ class Ex6_4 {
 		long result2 = mm.subtract(5L, 3L);
 		long result3 = mm.multiply(5L, 3L);
 		double result4 = mm.divide(5L, 3L);
-
+		long reesult = mm.max(5, 3);
+		System.out.println("max(5L, 3L) = " + reesult);
 		System.out.println("add(5L, 3L) = " + result1);
 		System.out.println("subtract(5L, 3L) = " + result2);
 		System.out.println("multiply(5L, 3L) = " + result3);
@@ -17,8 +18,26 @@ class Ex6_4 {
 	long add(long a, long b) {
 		long result = a + b;
 		return result;
-	//	return a + b;	// À§ÀÇ µÎ ÁÙÀ» ÀÌ¿Í °°ÀÌ ÇÑ ÁÙ·Î °£´ÜÈ÷ ÇÒ ¼ö ÀÖ´Ù.
+	//	return a + b;	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
 	}
+	
+	// ë‘ ê°’ì„ ë°›ì•„ì„œ ë‘˜ ì¤‘ì— í° ê°’ì„ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œë¥¼ ìž‘ì„±í•˜ì‹œì˜¤.
+	
+	long max(long a, long b){
+      return a > b ? a : b;
+	  
+	  /*
+       * long result = 0;
+       * if(a<b) {
+       * result =b;
+       * }
+       * else {
+       * result = a;
+       * }
+       * return result;
+       */
+	}
+	
 	long subtract(long a, long b) { return a - b; }
 	long multiply(long a, long b) { return a * b; }
 	double divide(double a, double b) {

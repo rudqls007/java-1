@@ -11,15 +11,28 @@ class Ex6_3 {
 		c2.kind = "Spade";
 		c2.number = 4;
 
-		System.out.println("c1Àº " + c1.kind + ", " + c1.number + "ÀÌ¸ç, Å©±â´Â (" + c1.width + ", " + c1.height + ")");
-		System.out.println("c2´Â " + c2.kind + ", " + c2.number + "ÀÌ¸ç, Å©±â´Â (" + c2.width + ", " + c2.height + ")");
-		System.out.println("c1ÀÇ width¿Í height¸¦ °¢°¢ 50, 80À¸·Î º¯°æÇÕ´Ï´Ù.");
+		System.out.println("c1ï¿½ï¿½ " + c1.kind + ", " + c1.number + "ï¿½Ì¸ï¿½, Å©ï¿½ï¿½ï¿½ (" + c1.width + ", " + c1.height + ")");
+		System.out.println("c2ï¿½ï¿½ " + c2.kind + ", " + c2.number + "ï¿½Ì¸ï¿½, Å©ï¿½ï¿½ï¿½ (" + c2.width + ", " + c2.height + ")");
+		System.out.println("c1ï¿½ï¿½ widthï¿½ï¿½ heightï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 50, 80ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 		c1.width = 50;
 		c1.height = 80;
 
-		System.out.println("c1Àº " + c1.kind + ", " + c1.number + "ÀÌ¸ç, Å©±â´Â (" + c1.width + ", " + c1.height + ")");
-		System.out.println("c2´Â " + c2.kind + ", " + c2.number + "ÀÌ¸ç, Å©±â´Â (" + c2.width + ", " + c2.height + ")");
+		System.out.println("c1ï¿½ï¿½ " + c1.kind + ", " + c1.number + "ï¿½Ì¸ï¿½, Å©ï¿½ï¿½ï¿½ (" + c1.width + ", " + c1.height + ")");
+		System.out.println("c2ï¿½ï¿½ " + c2.kind + ", " + c2.number + "ï¿½Ì¸ï¿½, Å©ï¿½ï¿½ï¿½ (" + c2.width + ", " + c2.height + ")");
+		
+		
+		int result = add(3, 5);
+		
+		System.out.println(result);
+		
 	}
+
+static int add(int x , int y) {
+  int result = x + y;
+  
+  return result;
+}
+
 }
 
 class Card {

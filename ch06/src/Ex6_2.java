@@ -1,14 +1,33 @@
 class Ex6_2 {
 	public static void main(String args[]) {
-		Tv t1 = new Tv();  // Tv t1; t1 = new Tv();¸¦ ÇÑ ¹®ÀåÀ¸·Î °¡´É
+		Tv t1 = new Tv();  // Tv t1; t1 = new Tv();ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		Tv t2 = new Tv();
-		System.out.println("t1ÀÇ channel°ªÀº " + t1.channel + "ÀÔ´Ï´Ù.");
-		System.out.println("t2ÀÇ channel°ªÀº " + t2.channel + "ÀÔ´Ï´Ù.");
+		System.out.println("t1ï¿½ï¿½ channelï¿½ï¿½ï¿½ï¿½ " + t1.channel + "ï¿½Ô´Ï´ï¿½.");
+		System.out.println("t2ï¿½ï¿½ channelï¿½ï¿½ï¿½ï¿½ " + t2.channel + "ï¿½Ô´Ï´ï¿½.");
 
-		t1.channel = 7;    // channel °ªÀ» 7À¸·Î ÇÑ´Ù.
-		System.out.println("t1ÀÇ channel°ªÀ» 7·Î º¯°æÇÏ¿´½À´Ï´Ù.");
-
-		System.out.println("t1ÀÇ channel°ªÀº " + t1.channel + "ÀÔ´Ï´Ù.");
-		System.out.println("t2ÀÇ channel°ªÀº " + t2.channel + "ÀÔ´Ï´Ù.");
+		t1.channel = 7;    // channel ï¿½ï¿½ï¿½ï¿½ 7ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½.
+		System.out.println("t1ï¿½ï¿½ channelï¿½ï¿½ï¿½ï¿½ 7ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+		
+		
+		t2 = t1;      // ì°¸ì¡°ë³€ìˆ˜ t1ì˜ ê°’ì„ t2ì— ì €ì¥í•œë‹¤.
+		System.out.println("t1ï¿½ï¿½ channelï¿½ï¿½ï¿½ï¿½ " + t1.channel + "ï¿½Ô´Ï´ï¿½.");
+		System.out.println("t2ï¿½ï¿½ channelï¿½ï¿½ï¿½ï¿½ " + t2.channel + "ï¿½Ô´Ï´ï¿½.");
+	
+		
+		
+		
+		Tv[] tvArr = new Tv[3];
+		
+		tvArr[0] = new Tv();
+		tvArr[1] = new Tv();
+		tvArr[2] = new Tv();
+		
+		
+		System.out.println(tvArr[0]);
+		
 	}
+	
+	
+	
+	
 }
